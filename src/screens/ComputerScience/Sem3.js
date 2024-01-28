@@ -1,3 +1,4 @@
+// src/screens/Sem3.js
 import React, { useState } from 'react';
 import { View, Text, ScrollView} from 'react-native';
 import { styled } from 'nativewind';
@@ -31,17 +32,17 @@ const calculateGPA = (courses) => {
   return gpa;
 };
 
-const Sem2 = () => {
+const Sem3 = () => {
   const [courses, setCourses] = useState([
-    { code: 'HS3151', name: 'PROFESSIONAL ENGLISH - I', credits: 3, grade: '' },
-    { code: 'MA3151', name: 'MATRICES AND CALCULUS', credits: 4, grade: '' },
-    { code: 'PH3151', name: 'ENGINEERING PHYSICS', credits: 3, grade: '' },
-    { code: 'CY3151', name: 'ENGINEERING CHEMISTRY', credits: 3, grade: '' },
-    { code: 'GE3151', name: 'PROBLEM SOLVING AND PYTHON PROGRAMMING', credits: 3, grade: '' },
-    { code: 'GE3152', name: 'HERITAGE OF TAMILS', credits: 1, grade: '' },
-    { code: 'GE3171', name: 'PROBLEM SOLVING AND PYTHON PROGRAMMING LABORATORY', credits: 2, grade: '' },
-    { code: 'BS3171', name: 'PHYSICS AND CHEMISTRY LABORATORY', credits: 2, grade: '' },
-    { code: 'GE3172', name: 'ENGLISH LABORATORY', credits: 2, grade: '' },
+    { code: 'MA3354', name: 'Discrete Mathematics', credits: 4, grade: '' },
+    { code: 'CS3351', name: 'Digital Principles and Computer Organization', credits: 4, grade: '' },
+    { code: 'CS3352', name: 'Foundations of Data Science', credits: 3, grade: '' },
+    { code: 'CS3301', name: 'Data Structures', credits: 3, grade: '' },
+    { code: 'CS3391', name: 'Object Oriented Programming', credits: 3, grade: '' },
+    { code: 'CS3311', name: 'Data Structures Laboratory', credits: 1.5, grade: '' },
+    { code: 'CS3381', name: 'Object Oriented Programming Laboratory', credits: 1.5, grade: '' },
+    { code: 'CS3361', name: 'Data Science Laboratory', credits: 2, grade: '' },
+    { code: 'GE3361', name: 'Professional Development', credits: 1, grade: '' },
   ]);
 
   const [newCourse, setNewCourse] = useState({
@@ -91,4 +92,4 @@ const Sem2 = () => {
   );
 };
 
-export default withExpoSnack(Sem2);
+export default withExpoSnack(Sem3);
