@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text,ScrollView, Button } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
+import { styled } from 'nativewind';
+import { withExpoSnack } from 'nativewind';
+
+const  StyledView = styled(View);
+const StyledText = styled(Text);
+
 
 const calculateGPA = (courses) => {
   const gradePoints = {
@@ -26,7 +32,7 @@ const calculateGPA = (courses) => {
   return gpa;
 };
 
-const GPAComponent = () => {
+const Sem1 = () => {
   const [courses, setCourses] = useState([
     { code: 'HS3151', name: 'PROFESSIONAL ENGLISH - I', credits: 3, grade: '' },
     { code: 'MA3151', name: 'MATRICES AND CALCULUS', credits: 4, grade: '' },
@@ -50,9 +56,12 @@ const GPAComponent = () => {
 
   return (
     <ScrollView>
+      <StyledView className='bg-orange-200'>
+      <StyledText className='text-center py-4 font-bold text-xl uppercase mx-4'>Select the Grades you Scored!</StyledText>
       {courses.map((course, index) => (
-        <View key={index}>
-          <Text>{course.code} - {course.name}</Text>
+        <StyledView className='my-2 bg-blue-300 rounded-2xl mx-5' key={index}>
+          <StyledText className='px-3 py-3'>{course.code} - {course.name}</StyledText>
+          <StyledView className=''>
           <Picker
             selectedValue={course.grade}
             onValueChange={(itemValue) => {
@@ -72,12 +81,16 @@ const GPAComponent = () => {
             <Picker.Item label="SA" value="SA" />
             <Picker.Item label="W" value="W" />
           </Picker>
-        </View>
+              </StyledView>
+        </StyledView>
       ))}
-      <Text>Your GPA: {gpa.toFixed(2)}</Text>
+      <StyledView className='my-3 mx-10'>
+      <StyledText  className='bg-green-300 mx-5 text-center rounded-xl font-extralight text-2xl py-5'>Your GPA: {gpa.toFixed(2)}</StyledText>
       {/* Example TextInput for adding a new course */}
+      </StyledView>
+          </StyledView>
     </ScrollView>
   );
 };
 
-export default GPAComponent;
+export default withExpoSnack(Sem1);
