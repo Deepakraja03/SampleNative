@@ -1,20 +1,19 @@
-// src/screens/HomeScreen.js
+// InformationTechnology.js
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { styled } from 'nativewind';
-import Sem1 from './Sem1'; // Import Sem1 component
-import Sem2 from './Sem2'; // Import Sem2 component
 
 const StyledView = styled(View);
 const StyledText = styled(Text);
+const StyledTouchableOpacity = styled(TouchableOpacity);
 
-const HomeScreen = ({ navigation }) => {
+const InformationTechnology = ({ navigation }) => {
   return (
-    <StyledView>
-      <StyledText className='text-center my-5'>Calculate Your CGPA</StyledText>
-      <TouchableOpacity
+    <StyledView className='bg-green-100 h-screen'>
+      <StyledText className='text-center my-5'>Calculate Your GPA</StyledText>
+      <StyledTouchableOpacity className='mx-5'
         style={{
-          backgroundColor: '#3498db',
+          backgroundColor: '#4CAF50',
           padding: 15,
           borderRadius: 25,
           alignItems: 'center',
@@ -25,10 +24,10 @@ const HomeScreen = ({ navigation }) => {
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 1
         </StyledText>
-      </TouchableOpacity>
-      <TouchableOpacity
+      </StyledTouchableOpacity>
+      <StyledTouchableOpacity className='mx-5'
         style={{
-          backgroundColor: '#3498db',
+          backgroundColor: '#4CAF50',
           padding: 15,
           borderRadius: 25,
           alignItems: 'center',
@@ -39,9 +38,10 @@ const HomeScreen = ({ navigation }) => {
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 2
         </StyledText>
-      </TouchableOpacity>
+      </StyledTouchableOpacity>
+      {/* Repeat the pattern for other semesters */}
     </StyledView>
   );
 };
 
-export default HomeScreen;
+export default InformationTechnology;
