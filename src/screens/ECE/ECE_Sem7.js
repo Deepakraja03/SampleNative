@@ -36,9 +36,9 @@ const ECE_Sem7 = () => {
     const [courses, setCourses] = useState([
         { code: 'GE3791', name: 'Human Values and Ethics', credits: 2, grade: '' },
         { code: 'CCS3695', name: 'Elective - Management#', credits: 3, grade: '' },
-        { code: '', name: 'Open Elective – II', credits: 3, grade: '' },
-        { code: '', name: 'Open Elective – III', credits: 3, grade: '' },
-        { code: '', name: 'Open Elective – IV', credits: 3, grade: '' },
+        { code: '', name: 'Open Elective - II', credits: 3, grade: '' },
+        { code: '', name: 'Open Elective - III', credits: 3, grade: '' },
+        { code: '', name: 'Open Elective - IV', credits: 3, grade: '' },
         { code: '', name: 'Mandatory Course-II', credits: 0, grade: '' },
         // Practical Courses
         { code: 'EC3711', name: 'Summer Internship', credits: 2, grade: '' },

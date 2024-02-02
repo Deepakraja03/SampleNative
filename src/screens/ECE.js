@@ -18,7 +18,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 1')} 
+        onPress={() => navigation.navigate('ECE_Sem1')} 
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 1
@@ -32,7 +32,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 2')}
+        onPress={() => navigation.navigate('ECE_Sem2')}
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 2
@@ -46,7 +46,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 3')}
+        onPress={() => navigation.navigate('ECE_Sem2')}
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 3
@@ -61,7 +61,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 4')}
+        onPress={() => navigation.navigate('ECE_Sem4')}
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 4
@@ -75,7 +75,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 5')}
+        onPress={() => navigation.navigate('ECE_Sem5')}
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 5
@@ -89,7 +89,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 6')}
+        onPress={() => navigation.navigate('ECE_Sem6')}
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 6
@@ -103,7 +103,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 7')}
+        onPress={() => navigation.navigate('ECE_Sem7')}
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 7
@@ -117,7 +117,7 @@ const ECE = ({ navigation }) => {
           alignItems: 'center',
           margin: 10,
         }}
-        onPress={() => navigation.navigate('Semester 8')}
+        onPress={() => navigation.navigate('ECE_Sem8')}
       >
         <StyledText style={{ color: 'white', fontSize: 18 }}>
           Semester 8
