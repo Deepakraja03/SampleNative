@@ -26,20 +26,50 @@ const Courses = ({ navigation }) => {
         </StyledText>
       </StyledTouchableOpacity>
       <StyledView className='my-5'>
-      <StyledTouchableOpacity className='mx-4'
-        style={{
+        <StyledTouchableOpacity className='mx-4'
+          style={{
             backgroundColor: '#3498db',
-          padding: 15,
-          borderRadius: 25,
-          alignItems: 'center',
-        }}
-        onPress={() => navigation.navigate('ComputerScience')}
-      >
-        <StyledText className='text-xl'>
-          InformationTechnology
-        </StyledText>
-      </StyledTouchableOpacity>
-        </StyledView>
+            padding: 15,
+            borderRadius: 25,
+            alignItems: 'center',
+          }}
+          onPress={() => navigation.navigate('InformationTechnology')}
+        >
+          <StyledText className='text-xl'>
+            InformationTechnology
+          </StyledText>
+        </StyledTouchableOpacity>
+      </StyledView>
+      <StyledView className='my-5'>
+        <StyledTouchableOpacity className='mx-4'
+          style={{
+            backgroundColor: '#3498db',
+            padding: 15,
+            borderRadius: 25,
+            alignItems: 'center',
+          }}
+          onPress={() => navigation.navigate('ECE')}
+        >
+          <StyledText className='text-xl'>
+            Electronics and Communication Engineering
+          </StyledText>
+        </StyledTouchableOpacity>
+      </StyledView>
+      <StyledView className='my-5'>
+        <StyledTouchableOpacity className='mx-4'
+          style={{
+            backgroundColor: '#3498db',
+            padding: 15,
+            borderRadius: 25,
+            alignItems: 'center',
+          }}
+          onPress={() => navigation.navigate('ECE')}
+        >
+          <StyledText className='text-xl'>
+            Electrical and Electronics Engineering
+          </StyledText>
+        </StyledTouchableOpacity>
+      </StyledView>
     </StyledView>
   );
 };
