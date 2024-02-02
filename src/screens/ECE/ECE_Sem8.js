@@ -32,16 +32,9 @@ const calculateGPA = (courses) => {
     return gpa;
 };
 
-const IT_Sem6 = () => {
+const ECE_Sem8 = () => {
     const [courses, setCourses] = useState([
-            { code: 'CCS356', name: 'Object Oriented Software Engineering', credits: 4, grade: '' },
-            { code: '', name: 'Open Elective - I', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective III', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective IV', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective V', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective VI', credits: 3, grade: '' },
-            { code: '', name: 'Mandatory Course-II &', credits: 0, grade: '' },
-            { code: 'IT3681', name: 'Mobile Application Development Laboratory', credits: 1.5, grade: '' },          
+        { code: 'EC3811', name: 'Project Work/Internship', credits: 10, grade: '' },
     ]);
 
     const [newCourse, setNewCourse] = useState({
@@ -92,4 +85,4 @@ const IT_Sem6 = () => {
     );
 };
 
-export default withExpoSnack(IT_Sem6);
+export default withExpoSnack(ECE_Sem8);

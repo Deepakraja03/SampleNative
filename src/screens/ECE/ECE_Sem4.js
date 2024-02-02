@@ -32,16 +32,17 @@ const calculateGPA = (courses) => {
     return gpa;
 };
 
-const IT_Sem6 = () => {
+const ECE_Sem4 = () => {
     const [courses, setCourses] = useState([
-            { code: 'CCS356', name: 'Object Oriented Software Engineering', credits: 4, grade: '' },
-            { code: '', name: 'Open Elective - I', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective III', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective IV', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective V', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective VI', credits: 3, grade: '' },
-            { code: '', name: 'Mandatory Course-II &', credits: 0, grade: '' },
-            { code: 'IT3681', name: 'Mobile Application Development Laboratory', credits: 1.5, grade: '' },          
+            { code: 'EC3452', name: 'Electromagnetic Fields', credits: 3, grade: '' },
+            { code: 'EC3401', name: 'Networks and Security', credits: 4, grade: '' },
+            { code: 'EC3451', name: 'Linear Integrated Circuits', credits: 3, grade: '' },
+            { code: 'EC3492', name: 'Digital Signal Processing', credits: 4, grade: '' },
+            { code: 'EC3491', name: 'Communication Systems', credits: 3, grade: '' },
+            { code: 'GE3451', name: 'Environmental Sciences and Sustainability', credits: 2, grade: '' },
+            // Practicals
+            { code: 'EC3461', name: 'Communication Systems Laboratory', credits: 1.5, grade: '' },
+            { code: 'EC3462', name: 'Linear Integrated Circuits Laboratory', credits: 1.5, grade: '' },
     ]);
 
     const [newCourse, setNewCourse] = useState({
@@ -92,4 +93,4 @@ const IT_Sem6 = () => {
     );
 };
 
-export default withExpoSnack(IT_Sem6);
+export default withExpoSnack(ECE_Sem4);

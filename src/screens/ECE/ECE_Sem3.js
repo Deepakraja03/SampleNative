@@ -32,16 +32,18 @@ const calculateGPA = (courses) => {
     return gpa;
 };
 
-const IT_Sem6 = () => {
+const ECE_Sem3 = () => {
     const [courses, setCourses] = useState([
-            { code: 'CCS356', name: 'Object Oriented Software Engineering', credits: 4, grade: '' },
-            { code: '', name: 'Open Elective - I', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective III', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective IV', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective V', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective VI', credits: 3, grade: '' },
-            { code: '', name: 'Mandatory Course-II &', credits: 0, grade: '' },
-            { code: 'IT3681', name: 'Mobile Application Development Laboratory', credits: 1.5, grade: '' },          
+            { code: 'MA3355', name: 'Random Processes and Linear Algebra', credits: 4, grade: '' },
+            { code: 'CS3353', name: 'C Programming and Data Structures', credits: 3, grade: '' },
+            { code: 'EC3354', name: 'Signals and Systems', credits: 4, grade: '' },
+            { code: 'EC3353', name: 'Electronic Devices and Circuits', credits: 3, grade: '' },
+            { code: 'EC3351', name: 'Control Systems', credits: 3, grade: '' },
+            { code: 'EC3352', name: 'Digital Systems Design', credits: 4, grade: '' },
+            // Practicals
+            { code: 'EC3361', name: 'Electronic Devices and Circuits Laboratory', credits: 1.5, grade: '' },
+            { code: 'CS3362', name: 'C Programming and Data Structures Laboratory', credits: 1.5, grade: '' },
+            { code: 'GE3361', name: 'Professional Development', credits: 1, grade: '' },   
     ]);
 
     const [newCourse, setNewCourse] = useState({
@@ -92,4 +94,4 @@ const IT_Sem6 = () => {
     );
 };
 
-export default withExpoSnack(IT_Sem6);
+export default withExpoSnack(ECE_Sem3);

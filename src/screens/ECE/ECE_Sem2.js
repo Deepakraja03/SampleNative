@@ -32,16 +32,19 @@ const calculateGPA = (courses) => {
     return gpa;
 };
 
-const IT_Sem6 = () => {
+const ECE_Sem2 = () => {
     const [courses, setCourses] = useState([
-            { code: 'CCS356', name: 'Object Oriented Software Engineering', credits: 4, grade: '' },
-            { code: '', name: 'Open Elective - I', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective III', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective IV', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective V', credits: 3, grade: '' },
-            { code: '', name: 'Professional Elective VI', credits: 3, grade: '' },
-            { code: '', name: 'Mandatory Course-II &', credits: 0, grade: '' },
-            { code: 'IT3681', name: 'Mobile Application Development Laboratory', credits: 1.5, grade: '' },          
+            { code: 'HS3252', name: 'Professional English - II', credits: 2, grade: '' },
+            { code: 'MA3251', name: 'Statistics and Numerical Methods', credits: 4, grade: '' },
+            { code: 'PH3254', name: 'Physics for Electronics Engineering', credits: 3, grade: '' },
+            { code: 'BE3254', name: '2nd Semester', credits: 3, grade: '' },
+            { code: 'GE3251', name: 'Engineering Graphics', credits: 4, grade: '' },
+            { code: 'EC3251', name: 'Circuit Analysis', credits: 4, grade: '' },
+            { code: 'GE3252', name: 'தமிழரும் ததொழில்நுட்பமும் /Tamils and Technology', credits: 1, grade: '' },
+            { code: 'GE3271', name: 'Engineering Practices Laboratory', credits: 2, grade: '' },
+            { code: 'EC3271', name: 'Circuits Analysis Laboratory', credits: 1, grade: '' },
+            { code: 'GE3272', name: 'Communication Laboratory / Foreign Language', credits: 2, grade: '' },
+          
     ]);
 
     const [newCourse, setNewCourse] = useState({
@@ -92,4 +95,4 @@ const IT_Sem6 = () => {
     );
 };
 
-export default withExpoSnack(IT_Sem6);
+export default withExpoSnack(ECE_Sem2);

@@ -40,6 +40,21 @@ const Courses = ({ navigation }) => {
         </StyledText>
       </StyledTouchableOpacity>
         </StyledView>
+        <StyledView className='my-5'>
+      <StyledTouchableOpacity className='mx-4'
+        style={{
+            backgroundColor: '#3498db',
+          padding: 15,
+          borderRadius: 25,
+          alignItems: 'center',
+        }}
+        onPress={() => navigation.navigate('ECE')}
+      >
+        <StyledText className='text-xl'>
+          Electronics and Communication Engineering
+        </StyledText>
+      </StyledTouchableOpacity>
+        </StyledView>
     </StyledView>
   );
 };
