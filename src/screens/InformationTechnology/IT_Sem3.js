@@ -25,23 +25,24 @@ const calculateGPA = (courses) => {
   const denominator = courses.reduce((acc, course) => acc + course.credits, 0);
 
   if (denominator === 0) {
-    return 0; 
+    return 0; // Avoid division by zero
   }
 
   const gpa = numerator / denominator;
   return gpa;
 };
 
-const Sem6 = () => {
+const IT_Sem3 = () => {
   const [courses, setCourses] = useState([
-      { code: 'CCS356', name: 'Object Oriented Software Engineering', credits: 4, grade: '' },
-      { code: 'CS3691', name: 'Embedded Systems and IoT', credits: 4, grade: '' },
-      { code: '', name: 'Open Elective - I*', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective III', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective IV', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective V', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective VI', credits: 3, grade: '' },
-      { code: '', name: 'Mandatory Course-II', credits: 0, grade: '' },
+    { code: 'MA3354', name: 'Discrete Mathematics', credits: 4, grade: '' },
+  { code: 'CS3351', name: 'Digital Principles and Computer Organization', credits: 4, grade: '' },
+  { code: 'CS3352', name: 'Foundations of Data Science', credits: 3, grade: '' },
+  { code: 'CS3301', name: 'Data Structures', credits: 3, grade: '' },
+  { code: 'CS3391', name: 'Object Oriented Programming', credits: 3, grade: '' },
+  { code: 'CS3311', name: 'Data Structures Laboratory', credits: 2, grade: '' },
+  { code: 'CS3381', name: 'Object Oriented Programming Laboratory', credits: 1.5, grade: '' },
+  { code: 'CS3361', name: 'Data Science Laboratory', credits: 2, grade: '' },
+  { code: 'GE3361', name: 'Professional Development', credits: 1, grade: '' },
   ]);
 
   const [newCourse, setNewCourse] = useState({
@@ -92,4 +93,4 @@ const Sem6 = () => {
   );
 };
 
-export default withExpoSnack(Sem6);
+export default withExpoSnack(IT_Sem3);

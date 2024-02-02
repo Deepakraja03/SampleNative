@@ -33,7 +33,7 @@ const Courses = ({ navigation }) => {
           borderRadius: 25,
           alignItems: 'center',
         }}
-        onPress={() => navigation.navigate('ComputerScience')}
+        onPress={() => navigation.navigate('InformationTechnology')}
       >
         <StyledText className='text-xl'>
           InformationTechnology

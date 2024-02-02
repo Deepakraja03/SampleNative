@@ -25,23 +25,24 @@ const calculateGPA = (courses) => {
   const denominator = courses.reduce((acc, course) => acc + course.credits, 0);
 
   if (denominator === 0) {
-    return 0; 
+    return 0; // Avoid division by zero
   }
 
   const gpa = numerator / denominator;
   return gpa;
 };
 
-const Sem6 = () => {
+const IT_Sem1 = () => {
   const [courses, setCourses] = useState([
-      { code: 'CCS356', name: 'Object Oriented Software Engineering', credits: 4, grade: '' },
-      { code: 'CS3691', name: 'Embedded Systems and IoT', credits: 4, grade: '' },
-      { code: '', name: 'Open Elective - I*', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective III', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective IV', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective V', credits: 3, grade: '' },
-      { code: '', name: 'Professional Elective VI', credits: 3, grade: '' },
-      { code: '', name: 'Mandatory Course-II', credits: 0, grade: '' },
+    { code: 'HS3151', name: 'PROFESSIONAL ENGLISH - I', credits: 3, grade: '' },
+    { code: 'MA3151', name: 'MATRICES AND CALCULUS', credits: 4, grade: '' },
+    { code: 'PH3151', name: 'ENGINEERING PHYSICS', credits: 3, grade: '' },
+    { code: 'CY3151', name: 'ENGINEERING CHEMISTRY', credits: 3, grade: '' },
+    { code: 'GE3151', name: 'PROBLEM SOLVING AND PYTHON PROGRAMMING', credits: 3, grade: '' },
+    { code: 'GE3152', name: 'HERITAGE OF TAMILS', credits: 1, grade: '' },
+    { code: 'GE3171', name: 'PROBLEM SOLVING AND PYTHON PROGRAMMING LABORATORY', credits: 2, grade: '' },
+    { code: 'BS3171', name: 'PHYSICS AND CHEMISTRY LABORATORY', credits: 2, grade: '' },
+    { code: 'GE3172', name: 'ENGLISH LABORATORY', credits: 2, grade: '' },
   ]);
 
   const [newCourse, setNewCourse] = useState({
@@ -92,4 +93,4 @@ const Sem6 = () => {
   );
 };
 
-export default withExpoSnack(Sem6);
+export default withExpoSnack(IT_Sem1);

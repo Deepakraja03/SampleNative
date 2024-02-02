@@ -11,6 +11,8 @@ import Sem7 from './src/screens/ComputerScience/Sem7';
 import Sem8 from './src/screens/ComputerScience/Sem8';
 import Courses from './src/screens/Courses';
 import ComputerScience from './src/screens/ComputerScience';
+import InformationTechnology from './src/screens/InformationTechnology';
+import Home from './Home';
 
 const Stack = createStackNavigator();
 
@@ -18,7 +20,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Courses} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Courses" component={Courses} />
         <Stack.Screen name="ComputerScience" component={ComputerScience} />
         <Stack.Screen name="Semester 1" component={Sem1} />
         <Stack.Screen name="Semester 2" component={Sem2} />
@@ -28,6 +31,7 @@ const App = () => {
         <Stack.Screen name="Semester 6" component={Sem6} />
         <Stack.Screen name="Semester 7" component={Sem7} />
         <Stack.Screen name="Semester 8" component={Sem8} />
+        <Stack.Screen name="InformationTechnology" component={InformationTechnology} />
       </Stack.Navigator>
     </NavigationContainer>
   );
